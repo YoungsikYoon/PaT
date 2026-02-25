@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Breadth-First Exploration on Adaptive Grid for Reinforcement Learning</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <!-- <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> -->
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="UTF-8">
+    <title>Two GIFs Example</title>
+    <style>
+        .gif-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .gif-container img {
+            width: 300px;
+            height: auto;
+        }
+        .gif-container p {
+          text-align: center;
+          margin-top: 10px;
+      }
+    </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Breadth-First Exploration on Adaptive Grid for Reinforcement Learning</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+                <span class="author-block">
+                  Youngsik Yoon,</span>
+                <span class="author-block">
+                  Gangbok Lee,</span>
+                <span class="author-block">
+                  Sungsoo Ahn,</span>
+                <span class="author-block">
+                  Jungseul Ok
+                </span>
+                </div>
+
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block">Pohang University of Science and Technology (POSTECH)<br>ICML 2024</span>
+                </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://github.com/ml-postech/BEAG" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+ 
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/ml-postech/BEAG" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/figure1.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        <small><b>Illustration of breadth-first exploration.</b> 
+          We compare the subgoal exploration strategies of [1] DHRL (state-of-the-art) and BEAG (ours) for U-maze task (a).
+          (b, c) Each plot summarizes the statistics on the attempted subgoals at 5-th and 10-th training epochs, corresponding to 174K and 219K environment steps, respectively. DHRL expends a substantial number of attempts on impossible subgoals (on and over the wall), whereas BEAG spends virtually zero attempts on them.
+          This demonstrates the efficiency of BEAG conducting the breadth-first exploration.</small>
+      </h2>
+      <div class="gif-container">
+      <div>
+        <img src="static/videos/DHRL_U.gif" alt="DHRL_U">
+        <p>(a) DHRL</p>
+      </div>
+      <div>
+        <img src="static/videos/BEAG_U.gif" alt="BEAG_U">
+        <p>(b) BEAG</p>
+      </div>
+      </div>
+      <div>
+      <br>
+      <h2 class="subtitle has-text-centered">
+        <small><b>Animation of breadth-first exploration.</b>
+          We visualize the exploration performance of DHRL and BEAG for the U-maze task.
+          DHRL repeatedly attempts impossible subgoals, while BEAG achieves challenging goals over the wall.
+        </small>
+        <br>
+      </h2>
+      <h2>
+        <small>[1] Lee et al., "DHRL: A Graph-Based Approach for Long-Horizon and Sparse Hierarchical Reinforcement Learning", <i>Advances in Neural Information Processing Systems</i> 2022
+        </small>
+      </h2>
+      </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Graph-based planners have gained significant attention for goal-conditioned reinforcement learning (RL), where they construct a graph consisting of confident transitions between subgoals as edges and run shortest path algorithms to exploit the confident edges. Meanwhile, identifying and avoiding unattainable transitions are also crucial yet overlooked by the previous graph-based planners, leading to wasting an excessive number of attempts at unattainable subgoals. To address this oversight, we propose a graph construction method that efficiently manages all the achieved and unattained subgoals on a grid graph adaptively discretizing the goal space. This enables a breadth-first exploration strategy, grounded in the local adaptive grid refinement, that prioritizes broad probing of subgoals on a coarse grid over meticulous one on a dense grid. We conducted a theoretical analysis and demonstrated the effectiveness of our approach through empirical evidence, showing that only BEAG succeeds in complex environments under the proposed fixed-goal setting. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <br>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</section> -->
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Proposed Method</h2>
+          <div class="hero-body">
+            <img src="static/images/method.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              <small><b>Illustration of the BEAG.</b> 
+                BEAG employs a grid covering the entire map instead of relying on graphs generated from the replay buffer which, may include unexplored or even impossible subgoals.
+                BEAG follows paths generated from the graph and explores promising subgoals by removing edges connected to subgoals that have been experienced repeated failures.
+              </small>
+            </h2>
+            
+            <img src="static/images/refinement.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              <small><b>Illustration of adpative refinement.</b>
+                To address the issue of failing to generate paths due to a breadth-first search, such as in a bottleneck-maze task, BEAG employs adaptive grid refinement:
+                (1) Identifying unattainable subgoals until paths cannot be generated.
+                (2) Performing dense refinement around one of the unattainable nodes.
+                (3) Repeating step 1 and 2 until a successful path is found.
+              </small>
+            </h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Theoritical Analysis</h2>
+          <div class="hero-body">
+            <img src="static/images/analysis.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              <small><b>Illustration of theoritical analysis.</b> 
+                According to our analysis:
+                (a) BEAG can always generate a possible path if there exists an 𝜖-path.
+                (b) The length of the grid path is at most \( (\left\lceil \frac{l}{\delta_0} \right\rceil + 1) \delta_0 \sqrt{K}\), where 𝑙 is the length of the 𝜖-path.
+              </small>
+            </h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Main Results</h2>
+          <div class="hero-body">
+            <img src="static/images/environment.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              <small><b>AntMaze and Reacher3D environments.</b> We evaluate graph-based RL methods in the set of MuJoCo environments depicted above, in challenging setups with sparse rewards over a long horizon. We note that the goal space for the AntMaze and the Reacher3D utilized 2-dimensional space and 3-dimensional space, respectively.</small>
+            </h2>
+            
+            <img src="static/images/result.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              <small><b>Success rates in various environments (fixed goal).</b> We report the average success rate as a solid line and the standard deviation as a shaded region. Both BEAG and all other baselines are trained with a fixed initial state and goal setting. We note that certain baselines may not be visible in specific environments due to overlapping values, especially at zero success rates.</small>
+            </h2>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{yoon2024beag,
+        title={Breadth-First Exploration on Adaptive Grid for Reinforcement Learning},
+        author={Yoon, Youngsik and Lee, Gangbok and Ahn, Sungsoo and Ok, Jungseul},
+        booktitle={Forty-first International Conference on Machine Learning},
+        year={2024}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
